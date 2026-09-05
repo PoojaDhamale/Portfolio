@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pooja Dhamale | Data Analyst | AI & Data Science</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Pooja Dhamale — Artificial Intelligence & Data Science student focused on Data Analytics, Data Engineering, Business Intelligence, and AI."
+  />
+
+  <meta
+    name="keywords"
+    content="Pooja Dhamale, Data Analyst, Data Science, AI, Machine Learning, Power BI, SQL, Python, Data Engineering"
+  />
+
+  <meta name="author" content="Pooja Dhamale" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Contact Form Status Styling -->
+  <style>
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 9px 16px;
+      border: 1px solid rgba(212, 168, 83, 0.45);
+      border-radius: 8px;
+      color: var(--gold-400, #d4a853);
+      background: transparent;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .project-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .project-link:hover {
+      transform: translateY(-2px);
+      background: rgba(212, 168, 83, 0.10);
+      border-color: var(--gold-400, #d4a853);
+    }
+
+    .project-link-live {
+      background: rgba(212, 168, 83, 0.08);
+    }
+
+    /* =====================================================
+       WEB3FORMS CONTACT STATUS
+    ====================================================== */
+
+    .contact-status {
+      margin-top: 18px;
+      min-height: 24px;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      font-weight: 500;
+      transition: opacity 0.25s ease;
+    }
+
+    .contact-status.success {
+      color: #6fcf97;
+    }
+
+    .contact-status.error {
+      color: #eb5757;
+    }
+
+    .contact-status.loading {
+      color: var(--gold-400, #d4a853);
+    }
+
+    .btn-send:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+      transform: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+  <nav class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+      <a href="#landing" class="nav-logo">PD</a>
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="#landing">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+
+      </div>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <section id="landing">
+
+    <div class="hero-bg-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <div class="hero-content">
+
+      <p class="hero-greeting">
+        WELCOME TO MY PORTFOLIO
+      </p>
+
+      <h1 class="hero-name">
+        Pooja <span class="highlight">Dhamale</span>
+      </h1>
+
+      <p class="hero-designations">
+        Data Analytics
+        <span>·</span>
+        Data Science
+        <span>·</span>
+        AI &amp; Machine Learning
+      </p>
+
+      <p class="hero-intro">
+        I’m a final-year B.E. student in Artificial Intelligence &amp;
+        Data Science, passionate about turning data into meaningful insights
+        and practical solutions.
+      </p>
+
+      <p class="hero-intro">
+        I work across
+        <strong>
+          data analytics, machine learning, business intelligence,
+          and data engineering
+        </strong>
+        — combining technical problem-solving with real-world business thinking.
+      </p>
+
+      <p class="hero-intro">
+        Currently open to
+        <strong>
+          Data Analyst, Data Science, and AI/ML internship and entry-level opportunities
+        </strong>
+        where I can apply my skills, learn continuously, and contribute
+        to data-driven decision making.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#projects" class="btn btn-primary">
+          <i data-lucide="folder-open"></i>
+          View My Projects
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+          <i data-lucide="send"></i>
+          Get In Touch
+        </a>
+
+      </div>
+
+
+      <!-- HERO SOCIALS -->
+
+      <div class="hero-socials">
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/pooja-dhamale-4384a5297/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          aria-label="LinkedIn"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM8.3 18H5.7V9.7H8.3V18ZM7 8.5C6.15 8.5 5.5 7.85 5.5 7C5.5 6.15 6.15 5.5 7 5.5C7.85 5.5 8.5 6.15 8.5 7C8.5 7.85 7.85 8.5 7 8.5ZM18.3 18H15.7V13.8C15.7 12.8 15.68 11.5 14.3 11.5C12.9 11.5 12.7 12.6 12.7 13.7V18H10.1V9.7H12.6V10.8H12.65C13 10.15 13.8 9.4 15.1 9.4C17.75 9.4 18.3 11.15 18.3 13.4V18Z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/PoojaDhamale"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          aria-label="GitHub"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- Email -->
+        <a
+          href="mailto:dhamalepooja15@gmail.com"
+          class="social-icon"
+          aria-label="Email"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+
+            <path
+              d="M4 7L12 13L20 7"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+          </svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       ABOUT
+  ====================================================== -->
+
+  <section id="about">
+
+    <div class="section-container">
+
+      <div class="section-header">
+
+        <h2>About Me</h2>
+
+        <p>
+          AI &amp; Data Science student building data-driven solutions
+        </p>
+
+      </div>
+
+
+      <div class="about-content">
+
+        <p>
+          I’m a final-year B.E. student in Artificial Intelligence &amp;
+          Data Science with a strong interest in Data Analytics,
+          Data Engineering, Business Intelligence, and AI.
+        </p>
+
+        <p>
+          I work across the data lifecycle — from data cleaning,
+          transformation, and SQL analysis to machine learning,
+          visualization, and AI-powered applications.
+        </p>
+
+        <p>
+          I enjoy working with real-world datasets and building
+          practical solutions across E-Commerce ETL, Business Intelligence,
+          Machine Learning, NLP, and Generative AI.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       EDUCATION
+  ====================================================== -->
+
+  <section id="education">
+
+    <div class="section-container">
+
+      <div class="section-header">
+
+        <h2>Education</h2>
+
+        <p>
+          Academic background and qualifications
+        </p>
+
+      </div>
+
+
+      <div class="edu-card">
+
+        <div class="edu-border-trace"></div>
+
+        <div class="edu-top">
+
+          <div class="edu-icon">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+
+          <div class="edu-top-text">
+
+            <h3>
+              B.E. — Artificial Intelligence &amp; Data Science
+            </h3>
+
+            <p class="institution">
+              Smt. Indira Gandhi College of Engineering, Mumbai
+            </p>
+
+            <div class="edu-meta">
+
+              <span>
+                <i data-lucide="calendar"></i>
+                2023 – 2027
+              </span>
+
+              <span>
+                <i data-lucide="clock"></i>
+                Full-time
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="edu-bottom">
+
+          <h4>
+            <i data-lucide="star"></i>
+            Key Highlights
+          </h4>
+
+          <ul class="edu-highlight-list">
+
+            <li>
+              Current CGPA: <strong>9.46 / 10</strong>
+            </li>
+
+            <li>
+              Coursework includes Data Analysis, Machine Learning,
+              NLP, Statistical Modelling, Data Pipelines, and Database Systems.
+            </li>
+
+            <li>
+              Applied learning through projects involving E-Commerce,
+              banking, financial, and retail datasets.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PROJECTS
+  ====================================================== -->
+
+  <section id="projects" class="dark-section">
+
+    <div class="section-container">
+
+      <div class="section-header">
+
+        <h2>Projects</h2>
+
+        <p>
+          End-to-end analytics, AI, and data engineering solutions
+        </p>
+
+      </div>
+
+
+      <!-- =================================================
+           PROJECT 01 — OLIST
+      ================================================== -->
+
+      <div class="project-card">
+
+        <div class="project-left">
+
+          <div class="project-number">01</div>
+
+          <div class="project-type">
+            Data Engineering &amp; ETL
+          </div>
+
+          <div class="project-duration">
+            <i data-lucide="calendar"></i>
+            2026
+          </div>
+
+        </div>
+
+
+        <div class="project-right">
+
+          <h3 class="project-title">
+            Olist E-Commerce ETL Pipeline
+          </h3>
+
+          <p class="project-desc">
+            An end-to-end batch ETL pipeline that processes the Olist
+            Brazilian e-commerce dataset, performs data cleaning,
+            transformation and validation, and loads reliable data
+            into PostgreSQL for business analysis using SQL.
+          </p>
+
+
+          <div class="project-outcomes">
+
+            <div class="outcome-box">
+              <div class="outcome-num">100K+</div>
+              <p>Orders processed</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">10K</div>
+              <p>Rows per processing batch</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">25</div>
+              <p>Business SQL queries</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">15/15</div>
+              <p>Pytest cases passed</p>
+            </div>
+
+          </div>
+
+
+          <div class="project-techs">
+
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">SQLAlchemy</span>
+            <span class="tech-pill">psycopg2</span>
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">Pytest</span>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://github.com/PoojaDhamale/Olist-E-Commerce-ETL-Pipeline"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <i data-lucide="github"></i>
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           PROJECT 02 — RETAIL ANALYTICS
+      ================================================== -->
+
+      <div class="project-card">
+
+        <div class="project-left">
+
+          <div class="project-number">02</div>
+
+          <div class="project-type">
+            Data Analytics &amp; Business Intelligence
+          </div>
+
+          <div class="project-duration">
+            <i data-lucide="calendar"></i>
+            2025
+          </div>
+
+        </div>
+
+
+        <div class="project-right">
+
+          <h3 class="project-title">
+            Retail Sales, Segmentation &amp; Discount Optimisation
+          </h3>
+
+          <p class="project-desc">
+            A retail analytics project combining PostgreSQL,
+            RFM customer segmentation, Power BI, and Excel to
+            analyse revenue concentration, discount behaviour,
+            customer segments, and product performance.
+          </p>
+
+
+          <div class="project-outcomes">
+
+            <div class="outcome-box">
+              <div class="outcome-num">₹5.62B</div>
+              <p>Gross sales analysed</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">₹4.92B</div>
+              <p>Net sales analysed</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">RFM</div>
+              <p>Customer segmentation framework</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">BI</div>
+              <p>Interactive business reporting</p>
+            </div>
+
+          </div>
+
+
+          <div class="project-techs">
+
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">SQL</span>
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">Excel</span>
+            <span class="tech-pill">RFM Analysis</span>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://github.com/PoojaDhamale/retail-sales-dashboard-segmentation-discount-optimization"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <i data-lucide="github"></i>
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           PROJECT 03 — NL2SQL
+      ================================================== -->
+
+      <div class="project-card">
+
+        <div class="project-left">
+
+          <div class="project-number">03</div>
+
+          <div class="project-type">
+            AI &amp; Business Intelligence
+          </div>
+
+          <div class="project-duration">
+            <i data-lucide="calendar"></i>
+            2026
+          </div>
+
+        </div>
+
+
+        <div class="project-right">
+
+          <h3 class="project-title">
+            AI-Powered Natural Language to SQL BI Assistant
+          </h3>
+
+          <p class="project-desc">
+            An end-to-end AI Business Intelligence assistant that
+            converts natural language questions into validated SQL,
+            executes them on PostgreSQL, generates visualizations,
+            and provides data-grounded insights through a structured
+            "Why" Investigation Engine.
+          </p>
+
+
+          <div class="project-outcomes">
+
+            <div class="outcome-box">
+              <div class="outcome-num">92.9%</div>
+              <p>Natural language-to-SQL evaluation</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">5</div>
+              <p>Query investigation workflow</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">SELECT</div>
+              <p>SQL safety enforcement</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">18</div>
+              <p>Automated tests</p>
+            </div>
+
+          </div>
+
+
+          <div class="project-techs">
+
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">SQLAlchemy</span>
+            <span class="tech-pill">Groq API</span>
+            <span class="tech-pill">openai/gpt-oss-120b</span>
+            <span class="tech-pill">Streamlit</span>
+            <span class="tech-pill">Plotly</span>
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">Pytest</span>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://github.com/PoojaDhamale/AI-Powered-Natural-Language-to-SQL-Business-Intelligence-Assistant"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <i data-lucide="github"></i>
+              GitHub
+            </a>
+
+            <a
+              href="https://eo2y63umwncbb93egwmjvu.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link project-link-live"
+            >
+              <i data-lucide="external-link"></i>
+              Live Demo
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           PROJECT 04 — EMPLOYEE ATTRITION & SENTIMENT
+      ================================================== -->
+
+      <div class="project-card">
+
+        <div class="project-left">
+
+          <div class="project-number">04</div>
+
+          <div class="project-type">
+            Machine Learning &amp; NLP
+          </div>
+
+          <div class="project-duration">
+            <i data-lucide="calendar"></i>
+            2025–2026
+          </div>
+
+        </div>
+
+
+        <div class="project-right">
+
+          <h3 class="project-title">
+            Employee Attrition &amp; Sentiment Analytics
+          </h3>
+
+          <p class="project-desc">
+            A two-part HR analytics system combining employee attrition
+            prediction using Logistic Regression with Glassdoor sentiment
+            analysis using TF-IDF and Logistic Regression, delivered through
+            a single Streamlit application.
+          </p>
+
+
+          <div class="project-outcomes">
+
+            <div class="outcome-box">
+              <div class="outcome-num">0.815</div>
+              <p>Attrition model AUC-ROC</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">0.893</div>
+              <p>Sentiment model AUC-ROC</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">50K</div>
+              <p>Glassdoor reviews analysed</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">2-Part</div>
+              <p>HR analytics system</p>
+            </div>
+
+          </div>
+
+
+          <div class="project-techs">
+
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Pandas</span>
+            <span class="tech-pill">Scikit-learn</span>
+            <span class="tech-pill">TF-IDF</span>
+            <span class="tech-pill">Logistic Regression</span>
+            <span class="tech-pill">NLP</span>
+            <span class="tech-pill">Streamlit</span>
+            <span class="tech-pill">Plotly</span>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://github.com/PoojaDhamale/employee-attrition-sentiment-analytics"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <i data-lucide="github"></i>
+              GitHub
+            </a>
+
+            <a
+              href="https://employee-attrition-sentiment-analytics-az36nfpbqwcsqipnhfkucr.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link project-link-live"
+            >
+              <i data-lucide="external-link"></i>
+              Live Demo
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           PROJECT 05 — CHURN
+      ================================================== -->
+
+      <div class="project-card">
+
+        <div class="project-left">
+
+          <div class="project-number">05</div>
+
+          <div class="project-type">
+            Machine Learning &amp; Deployment
+          </div>
+
+          <div class="project-duration">
+            <i data-lucide="calendar"></i>
+            2025–2026
+          </div>
+
+        </div>
+
+
+        <div class="project-right">
+
+          <h3 class="project-title">
+            Customer Churn Prediction System
+          </h3>
+
+          <p class="project-desc">
+            An end-to-end machine learning system built on 100,000
+            bank customer records to predict churn. The solution uses
+            XGBoost, hyperparameter tuning, threshold optimisation,
+            and risk segmentation to prioritise the identification
+            of high-risk customers. Deployed using Streamlit.
+          </p>
+
+
+          <div class="project-outcomes">
+
+            <div class="outcome-box">
+              <div class="outcome-num">67.4%</div>
+              <p>Recall after threshold optimisation</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">49%</div>
+              <p>Fewer missed churns vs RF baseline</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">50.0%</div>
+              <p>Precision on high-risk flags</p>
+            </div>
+
+            <div class="outcome-box">
+              <div class="outcome-num">3-Tier</div>
+              <p>Customer risk segmentation</p>
+            </div>
+
+          </div>
+
+
+          <div class="project-techs">
+
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">NumPy</span>
+            <span class="tech-pill">Scikit-learn</span>
+            <span class="tech-pill">XGBoost</span>
+            <span class="tech-pill">Matplotlib</span>
+            <span class="tech-pill">Seaborn</span>
+            <span class="tech-pill">Streamlit</span>
+            <span class="tech-pill">RandomizedSearchCV</span>
+
+          </div>
+
+
+          <div class="project-links">
+
+            <a
+              href="https://github.com/PoojaDhamale/customer-churn-prediction-xgboost-streamlit"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              <i data-lucide="github"></i>
+              GitHub
+            </a>
+
+            <a
+              href="https://bank-customer-churn-prediction-p9iabpwp37pksd6fdpnjie.streamlit.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link project-link-live"
+            >
+              <i data-lucide="external-link"></i>
+              Live Demo
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       SKILLS
+  ====================================================== -->
+
+  <section id="skills">
+
+    <div class="section-container">
+
+      <div class="section-header">
+
+        <h2>Skills</h2>
+
+        <p>
+          Technical skills and tools I use to build data-driven solutions
+        </p>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+
+        <!-- DATA ANALYTICS -->
+
+        <div class="skill-category">
+
+          <div class="skill-cat-header">
+
+            <div class="skill-cat-icon">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+
+            <h3 class="skill-cat-title">
+              Data Analytics
+            </h3>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Python &amp; Data Analysis
+            </span>
+
+            <p class="skill-desc">
+              Pandas, NumPy, data cleaning, wrangling, EDA,
+              and statistical analysis.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              SQL &amp; PostgreSQL
+            </span>
+
+            <p class="skill-desc">
+              Joins, aggregations, transformations, analytical SQL,
+              and relational data analysis.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Excel
+            </span>
+
+            <p class="skill-desc">
+              Pivot Tables, XLOOKUP, data cleaning, charts,
+              and analytical reporting.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- AI & MACHINE LEARNING -->
+
+        <div class="skill-category">
+
+          <div class="skill-cat-header">
+
+            <div class="skill-cat-icon">
+              <i data-lucide="brain"></i>
+            </div>
+
+            <h3 class="skill-cat-title">
+              AI &amp; Machine Learning
+            </h3>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Machine Learning
+            </span>
+
+            <p class="skill-desc">
+              Scikit-learn, XGBoost, feature engineering,
+              model evaluation, and hyperparameter tuning.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              NLP &amp; Text Analytics
+            </span>
+
+            <p class="skill-desc">
+              TF-IDF, VADER, sentiment analysis,
+              text preprocessing, and NLP workflows.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Generative AI
+            </span>
+
+            <p class="skill-desc">
+              LLM applications, Natural Language-to-SQL,
+              prompt engineering, and AI assistants.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- BUSINESS INTELLIGENCE -->
+
+        <div class="skill-category">
+
+          <div class="skill-cat-header">
+
+            <div class="skill-cat-icon">
+              <i data-lucide="pie-chart"></i>
+            </div>
+
+            <h3 class="skill-cat-title">
+              Business Intelligence
+            </h3>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Power BI &amp; DAX
+            </span>
+
+            <p class="skill-desc">
+              Interactive dashboards, KPIs, data modelling,
+              DAX measures, and reporting.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Data Visualization
+            </span>
+
+            <p class="skill-desc">
+              Matplotlib, Seaborn, Plotly,
+              and interactive visual storytelling.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Business Analysis
+            </span>
+
+            <p class="skill-desc">
+              KPI tracking, trend analysis,
+              reporting, and data-driven decision making.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- DATA ENGINEERING -->
+
+        <div class="skill-category">
+
+          <div class="skill-cat-header">
+
+            <div class="skill-cat-icon">
+              <i data-lucide="database"></i>
+            </div>
+
+            <h3 class="skill-cat-title">
+              Data Engineering &amp; Tools
+            </h3>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              ETL &amp; Data Pipelines
+            </span>
+
+            <p class="skill-desc">
+              Data extraction, transformation, validation,
+              batch processing, and loading.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Python Tools
+            </span>
+
+            <p class="skill-desc">
+              SQLAlchemy, Streamlit, pytest,
+              and reusable data-processing workflows.
+            </p>
+
+          </div>
+
+
+          <div class="skill-item">
+
+            <span class="skill-name">
+              <i data-lucide="check" class="skill-icon-check"></i>
+              Development
+            </span>
+
+            <p class="skill-desc">
+              Git, GitHub, testing, environment configuration,
+              and project organisation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CERTIFICATIONS
+  ====================================================== -->
+
+  <section id="certifications" class="dark-section">
+
+    <div class="section-container">
+
+      <div class="section-header">
+
+        <h2>Certifications</h2>
+
+        <p>
+          Industry-recognised credentials and professional programs
+        </p>
+
+      </div>
+
+
+      <div class="certs-grid">
+
+
+        <!-- MICROSOFT DP-900 -->
+
+        <div class="cert-card">
+
+          <div class="cert-image-wrapper">
+
+            <div class="cert-image-placeholder microsoft">
+              <i data-lucide="cloud"></i>
+            </div>
+
+          </div>
+
+
+          <div class="cert-body">
+
+            <span class="cert-provider">
+              <i data-lucide="building-2"></i>
+              Microsoft
+            </span>
+
+            <h3 class="cert-name">
+              Azure Data Fundamentals (DP-900)
+            </h3>
+
+            <p class="cert-date">
+              <i data-lucide="calendar"></i>
+              July 2026
+            </p>
+
+            <a
+              href="assets/dp-900.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline cert-btn"
+            >
+              <i data-lucide="external-link"></i>
+              View Certificate
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- POWER BI FELLOW -->
+
+        <div class="cert-card">
+
+          <div class="cert-image-wrapper">
+
+            <div class="cert-image-placeholder powerbi">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+
+          </div>
+
+
+          <div class="cert-body">
+
+            <span class="cert-provider">
+              <i data-lucide="building-2"></i>
+              Microsoft Elevate Program
+            </span>
+
+            <h3 class="cert-name">
+              Power BI Fellow
+            </h3>
+
+            <p class="cert-date">
+              <i data-lucide="calendar"></i>
+              Feb – Mar 2026
+            </p>
+
+            <a
+              href="assets/microsoft_powerbi_fellow.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline cert-btn"
+            >
+              <i data-lucide="external-link"></i>
+              View Certificate
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- DELOITTE -->
+
+        <div class="cert-card">
+
+          <div class="cert-image-wrapper">
+
+            <div class="cert-image-placeholder deloitte">
+              <i data-lucide="trending-up"></i>
+            </div>
+
+          </div>
+
+
+          <div class="cert-body">
+
+            <span class="cert-provider">
+              <i data-lucide="building-2"></i>
+              Deloitte
+            </span>
+
+            <h3 class="cert-name">
+              Data Analytics Job Simulation
+            </h3>
+
+            <p class="cert-date">
+              <i data-lucide="calendar"></i>
+              April 2026
+            </p>
+
+            <a
+              href="assets/deloitte_analytics_simulation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline cert-btn"
+            >
+              <i data-lucide="external-link"></i>
+              View Certificate
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- GOOGLE PYTHON -->
+
+        <div class="cert-card">
+
+          <div class="cert-image-wrapper">
+
+            <div class="cert-image-placeholder google">
+              <i data-lucide="code-2"></i>
+            </div>
+
+          </div>
+
+
+          <div class="cert-body">
+
+            <span class="cert-provider">
+              <i data-lucide="building-2"></i>
+              Google / Coursera
+            </span>
+
+            <h3 class="cert-name">
+              Crash Course on Python
+            </h3>
+
+            <p class="cert-date">
+              <i data-lucide="calendar"></i>
+              January 2025
+            </p>
+
+            <a
+              href="assets/google_python_coursera.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline cert-btn"
+            >
+              <i data-lucide="external-link"></i>
+              View Certificate
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CONTACT
+  ====================================================== -->
+
+  <section id="contact">
+
+    <div class="section-container">
+
+      <div class="section-header">
+
+        <h2>Let's Build Something with Data</h2>
+
+        <p>
+          Have a project, internship, or opportunity?
+          I'd love to hear from you.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <!-- =================================================
+             CONTACT FORM — WEB3FORMS
+        ================================================== -->
+
+        <div class="contact-form-card">
+
+          <form
+            id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+
+            <!--
+              IMPORTANT:
+              Replace YOUR_WEB3FORMS_ACCESS_KEY with
+              your actual Web3Forms access key.
+            -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="6636d0aa-246a-42a3-9dd8-947a9e03fcc5"
+            />
+
+            <!-- Email notification subject -->
+            <input
+              type="hidden"
+              name="subject"
+              value="New Portfolio Contact Message"
+            />
+
+            <!-- Name shown in email notification -->
+            <input
+              type="hidden"
+              name="from_name"
+              value="Pooja Dhamale Portfolio"
+            />
+
+            <!-- Honeypot anti-spam field -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              style="display: none;"
+              tabindex="-1"
+              autocomplete="off"
+            />
+
+
+            <!-- FULL NAME -->
+
+            <div class="form-group">
+
+              <input
+                type="text"
+                id="fullName"
+                name="name"
+                placeholder=" "
+                autocomplete="name"
+                required
+              />
+
+              <label for="fullName">
+                Full Name
+              </label>
+
+              <span class="underline"></span>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+              <input
+                type="email"
+                id="emailAddr"
+                name="email"
+                placeholder=" "
+                autocomplete="email"
+                required
+              />
+
+              <label for="emailAddr">
+                Email Address
+              </label>
+
+              <span class="underline"></span>
+
+            </div>
+
+
+            <!-- SUBJECT -->
+
+            <div class="form-group">
+
+              <input
+                type="text"
+                id="visitorSubject"
+                name="visitor_subject"
+                placeholder=" "
+                required
+              />
+
+              <label for="visitorSubject">
+                Subject
+              </label>
+
+              <span class="underline"></span>
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder=" "
+                required
+              ></textarea>
+
+              <label for="message">
+                Message
+              </label>
+
+              <span class="underline"></span>
+
+            </div>
+
+
+            <!-- STATUS MESSAGE -->
+
+            <div
+              id="contactStatus"
+              class="contact-status"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+
+            <!-- SUBMIT BUTTON -->
+
+            <button
+              type="submit"
+              class="btn-send"
+              id="contactSubmit"
+            >
+
+              <i data-lucide="send"></i>
+
+              <span id="contactSubmitText">
+                Send Message
+              </span>
+
+            </button>
+
+          </form>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT INFORMATION
+        ================================================== -->
+
+        <div class="contact-info-panel">
+
+          <h3>
+            Get In Touch
+          </h3>
+
+          <p>
+            Feel free to reach out through any of these channels.
+          </p>
+
+
+          <!-- EMAIL -->
+
+          <div class="contact-row">
+
+            <div class="contact-row-icon">
+              <i data-lucide="mail"></i>
+            </div>
+
+            <div class="contact-row-text">
+
+              <p class="contact-row-label">
+                Email
+              </p>
+
+              <p class="contact-row-value">
+
+                <a href="mailto:dhamalepooja15@gmail.com">
+                  dhamalepooja15@gmail.com
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- LOCATION -->
+
+          <div class="contact-row">
+
+            <div class="contact-row-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+
+            <div class="contact-row-text">
+
+              <p class="contact-row-label">
+                Location
+              </p>
+
+              <p class="contact-row-value">
+                Navi Mumbai, Maharashtra, India
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- LINKEDIN -->
+
+          <div class="contact-row">
+
+            <div class="contact-row-icon">
+              <i data-lucide="linkedin"></i>
+            </div>
+
+            <div class="contact-row-text">
+
+              <p class="contact-row-label">
+                LinkedIn
+              </p>
+
+              <p class="contact-row-value">
+
+                <a
+                  href="https://www.linkedin.com/in/pooja-dhamale-4384a5297"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/pooja-dhamale-4384a5297
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- GITHUB -->
+
+          <div class="contact-row">
+
+            <div class="contact-row-icon">
+              <i data-lucide="github"></i>
+            </div>
+
+            <div class="contact-row-text">
+
+              <p class="contact-row-label">
+                GitHub
+              </p>
+
+              <p class="contact-row-value">
+
+                <a
+                  href="https://github.com/poojadhamale"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/poojadhamale
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer class="site-footer">
+
+    <p class="footer-name">
+      Pooja Dhamale
+    </p>
+
+    <p class="footer-tagline">
+      Turning data into insights and ideas into solutions.
+    </p>
+
+
+    <div class="footer-socials">
+
+      <a
+        href="https://github.com/poojadhamale"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+      >
+        <i data-lucide="github"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/pooja-dhamale-4384a5297"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i data-lucide="linkedin"></i>
+      </a>
+
+      <a
+        href="mailto:dhamalepooja15@gmail.com"
+        aria-label="Email"
+      >
+        <i data-lucide="mail"></i>
+      </a>
+
+    </div>
+
+
+    <p class="footer-copy">
+      &copy; 2026 Pooja Dhamale. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- =====================================================
+       SCRIPTS
+  ====================================================== -->
+
+  <script src="script.js"></script>
+
+
+
+
+
+  <!-- =====================================================
+       LUCIDE ICON INITIALIZATION
+  ====================================================== -->
+
+  <script>
+    if (typeof lucide !== "undefined") {
+      lucide.createIcons();
+    }
+  </script>
+
+</body>
+</html>
