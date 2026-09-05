@@ -33,7 +33,7 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Contact Form Status Styling -->
+  <!-- Additional Styling -->
   <style>
     .project-links {
       display: flex;
@@ -64,6 +64,12 @@
     .project-link svg {
       width: 16px;
       height: 16px;
+      flex-shrink: 0;
+    }
+
+    .project-link .brand-icon {
+      fill: currentColor;
+      stroke: none;
     }
 
     .project-link:hover {
@@ -77,7 +83,7 @@
     }
 
     /* =====================================================
-       WEB3FORMS CONTACT STATUS
+       CONTACT STATUS
     ====================================================== */
 
     .contact-status {
@@ -105,6 +111,42 @@
       opacity: 0.65;
       cursor: not-allowed;
       transform: none;
+    }
+
+    /* =====================================================
+       CONTACT / FOOTER BRAND ICONS
+    ====================================================== */
+
+    .brand-icon {
+      display: block;
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+      stroke: none;
+      flex-shrink: 0;
+    }
+
+    .contact-row-text a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-row-text a:hover {
+      color: var(--gold-400, #d4a853);
+    }
+
+    .footer-socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-socials .brand-icon {
+      width: 22px;
+      height: 22px;
     }
   </style>
 </head>
@@ -230,11 +272,13 @@
           class="social-icon"
           aria-label="LinkedIn"
         >
-
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            class="brand-icon"
+            aria-hidden="true"
+          >
             <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM8.3 18H5.7V9.7H8.3V18ZM7 8.5C6.15 8.5 5.5 7.85 5.5 7C5.5 6.15 6.15 5.5 7 5.5C7.85 5.5 8.5 6.15 8.5 7C8.5 7.85 7.85 8.5 7 8.5ZM18.3 18H15.7V13.8C15.7 12.8 15.68 11.5 14.3 11.5C12.9 11.5 12.7 12.6 12.7 13.7V18H10.1V9.7H12.6V10.8H12.65C13 10.15 13.8 9.4 15.1 9.4C17.75 9.4 18.3 11.15 18.3 13.4V18Z"/>
           </svg>
-
         </a>
 
 
@@ -246,11 +290,13 @@
           class="social-icon"
           aria-label="GitHub"
         >
-
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            class="brand-icon"
+            aria-hidden="true"
+          >
             <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
           </svg>
-
         </a>
 
 
@@ -260,9 +306,11 @@
           class="social-icon"
           aria-label="Email"
         >
-
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            class="email-icon"
+          >
             <rect
               x="3"
               y="5"
@@ -282,9 +330,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             />
-
           </svg>
-
         </a>
 
       </div>
@@ -311,7 +357,6 @@
         </p>
 
       </div>
-
 
       <div class="about-content">
 
@@ -358,7 +403,6 @@
 
       </div>
 
-
       <div class="edu-card">
 
         <div class="edu-border-trace"></div>
@@ -396,7 +440,6 @@
           </div>
 
         </div>
-
 
         <div class="edu-bottom">
 
@@ -451,9 +494,7 @@
       </div>
 
 
-      <!-- =================================================
-           PROJECT 01 — OLIST
-      ================================================== -->
+      <!-- PROJECT 01 — OLIST -->
 
       <div class="project-card">
 
@@ -472,7 +513,6 @@
 
         </div>
 
-
         <div class="project-right">
 
           <h3 class="project-title">
@@ -485,7 +525,6 @@
             transformation and validation, and loads reliable data
             into PostgreSQL for business analysis using SQL.
           </p>
-
 
           <div class="project-outcomes">
 
@@ -511,7 +550,6 @@
 
           </div>
 
-
           <div class="project-techs">
 
             <span class="tech-pill">Python</span>
@@ -524,7 +562,6 @@
 
           </div>
 
-
           <div class="project-links">
 
             <a
@@ -533,7 +570,13 @@
               rel="noopener noreferrer"
               class="project-link"
             >
-              <i data-lucide="github"></i>
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+              </svg>
               GitHub
             </a>
 
@@ -544,9 +587,7 @@
       </div>
 
 
-      <!-- =================================================
-           PROJECT 02 — RETAIL ANALYTICS
-      ================================================== -->
+      <!-- PROJECT 02 — RETAIL ANALYTICS -->
 
       <div class="project-card">
 
@@ -565,7 +606,6 @@
 
         </div>
 
-
         <div class="project-right">
 
           <h3 class="project-title">
@@ -578,7 +618,6 @@
             analyse revenue concentration, discount behaviour,
             customer segments, and product performance.
           </p>
-
 
           <div class="project-outcomes">
 
@@ -604,7 +643,6 @@
 
           </div>
 
-
           <div class="project-techs">
 
             <span class="tech-pill">Python</span>
@@ -616,7 +654,6 @@
 
           </div>
 
-
           <div class="project-links">
 
             <a
@@ -625,7 +662,13 @@
               rel="noopener noreferrer"
               class="project-link"
             >
-              <i data-lucide="github"></i>
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+              </svg>
               GitHub
             </a>
 
@@ -636,9 +679,7 @@
       </div>
 
 
-      <!-- =================================================
-           PROJECT 03 — NL2SQL
-      ================================================== -->
+      <!-- PROJECT 03 — NL2SQL -->
 
       <div class="project-card">
 
@@ -657,7 +698,6 @@
 
         </div>
 
-
         <div class="project-right">
 
           <h3 class="project-title">
@@ -671,7 +711,6 @@
             and provides data-grounded insights through a structured
             "Why" Investigation Engine.
           </p>
-
 
           <div class="project-outcomes">
 
@@ -697,7 +736,6 @@
 
           </div>
 
-
           <div class="project-techs">
 
             <span class="tech-pill">Python</span>
@@ -712,7 +750,6 @@
 
           </div>
 
-
           <div class="project-links">
 
             <a
@@ -721,7 +758,13 @@
               rel="noopener noreferrer"
               class="project-link"
             >
-              <i data-lucide="github"></i>
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+              </svg>
               GitHub
             </a>
 
@@ -742,9 +785,7 @@
       </div>
 
 
-      <!-- =================================================
-           PROJECT 04 — EMPLOYEE ATTRITION & SENTIMENT
-      ================================================== -->
+      <!-- PROJECT 04 — EMPLOYEE ATTRITION & SENTIMENT -->
 
       <div class="project-card">
 
@@ -763,7 +804,6 @@
 
         </div>
 
-
         <div class="project-right">
 
           <h3 class="project-title">
@@ -776,7 +816,6 @@
             analysis using TF-IDF and Logistic Regression, delivered through
             a single Streamlit application.
           </p>
-
 
           <div class="project-outcomes">
 
@@ -802,7 +841,6 @@
 
           </div>
 
-
           <div class="project-techs">
 
             <span class="tech-pill">Python</span>
@@ -816,7 +854,6 @@
 
           </div>
 
-
           <div class="project-links">
 
             <a
@@ -825,7 +862,13 @@
               rel="noopener noreferrer"
               class="project-link"
             >
-              <i data-lucide="github"></i>
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 17.8 9.54 17.8 9.54C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+              </svg>
               GitHub
             </a>
 
@@ -846,9 +889,7 @@
       </div>
 
 
-      <!-- =================================================
-           PROJECT 05 — CHURN
-      ================================================== -->
+      <!-- PROJECT 05 — CHURN -->
 
       <div class="project-card">
 
@@ -867,7 +908,6 @@
 
         </div>
 
-
         <div class="project-right">
 
           <h3 class="project-title">
@@ -881,7 +921,6 @@
             and risk segmentation to prioritise the identification
             of high-risk customers. Deployed using Streamlit.
           </p>
-
 
           <div class="project-outcomes">
 
@@ -907,7 +946,6 @@
 
           </div>
 
-
           <div class="project-techs">
 
             <span class="tech-pill">Python</span>
@@ -921,7 +959,6 @@
 
           </div>
 
-
           <div class="project-links">
 
             <a
@@ -930,7 +967,13 @@
               rel="noopener noreferrer"
               class="project-link"
             >
-              <i data-lucide="github"></i>
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+              </svg>
               GitHub
             </a>
 
@@ -973,7 +1016,6 @@
 
       </div>
 
-
       <div class="skills-grid">
 
 
@@ -993,7 +1035,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1008,7 +1049,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1022,7 +1062,6 @@
             </p>
 
           </div>
-
 
           <div class="skill-item">
 
@@ -1057,7 +1096,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1072,7 +1110,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1086,7 +1123,6 @@
             </p>
 
           </div>
-
 
           <div class="skill-item">
 
@@ -1121,7 +1157,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1136,7 +1171,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1150,7 +1184,6 @@
             </p>
 
           </div>
-
 
           <div class="skill-item">
 
@@ -1185,7 +1218,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1200,7 +1232,6 @@
 
           </div>
 
-
           <div class="skill-item">
 
             <span class="skill-name">
@@ -1214,7 +1245,6 @@
             </p>
 
           </div>
-
 
           <div class="skill-item">
 
@@ -1257,7 +1287,6 @@
 
       </div>
 
-
       <div class="certs-grid">
 
 
@@ -1272,7 +1301,6 @@
             </div>
 
           </div>
-
 
           <div class="cert-body">
 
@@ -1317,7 +1345,6 @@
 
           </div>
 
-
           <div class="cert-body">
 
             <span class="cert-provider">
@@ -1361,7 +1388,6 @@
 
           </div>
 
-
           <div class="cert-body">
 
             <span class="cert-provider">
@@ -1404,7 +1430,6 @@
             </div>
 
           </div>
-
 
           <div class="cert-body">
 
@@ -1462,13 +1487,10 @@
 
       </div>
 
-
       <div class="contact-grid">
 
 
-        <!-- =================================================
-             CONTACT FORM — WEB3FORMS
-        ================================================== -->
+        <!-- CONTACT FORM — WEB3FORMS -->
 
         <div class="contact-form-card">
 
@@ -1478,32 +1500,24 @@
             method="POST"
           >
 
-            <!--
-              IMPORTANT:
-              Replace YOUR_WEB3FORMS_ACCESS_KEY with
-              your actual Web3Forms access key.
-            -->
             <input
               type="hidden"
               name="access_key"
               value="6636d0aa-246a-42a3-9dd8-947a9e03fcc5"
             />
 
-            <!-- Email notification subject -->
             <input
               type="hidden"
               name="subject"
               value="New Portfolio Contact Message"
             />
 
-            <!-- Name shown in email notification -->
             <input
               type="hidden"
               name="from_name"
               value="Pooja Dhamale Portfolio"
             />
 
-            <!-- Honeypot anti-spam field -->
             <input
               type="checkbox"
               name="botcheck"
@@ -1630,9 +1644,7 @@
         </div>
 
 
-        <!-- =================================================
-             CONTACT INFORMATION
-        ================================================== -->
+        <!-- CONTACT INFORMATION -->
 
         <div class="contact-info-panel">
 
@@ -1700,7 +1712,15 @@
           <div class="contact-row">
 
             <div class="contact-row-icon">
-              <i data-lucide="linkedin"></i>
+
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM8.3 18H5.7V9.7H8.3V18ZM7 8.5C6.15 8.5 5.5 7.85 5.5 7C5.5 6.15 6.15 5.5 7 5.5C7.85 5.5 8.5 6.15 8.5 7C8.5 7.85 7.85 8.5 7 8.5ZM18.3 18H15.7V13.8C15.7 12.8 15.68 11.5 14.3 11.5C12.9 11.5 12.7 12.6 12.7 13.7V18H10.1V9.7H12.6V10.8H12.65C13 10.15 13.8 9.4 15.1 9.4C17.75 9.4 18.3 11.15 18.3 13.4V18Z"/>
+              </svg>
+
             </div>
 
             <div class="contact-row-text">
@@ -1712,11 +1732,11 @@
               <p class="contact-row-value">
 
                 <a
-                  href="https://www.linkedin.com/in/pooja-dhamale-4384a5297"
+                  href="https://www.linkedin.com/in/pooja-dhamale-4384a5297/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i data-lucide="Linkedin"></i>
+                  linkedin.com/in/pooja-dhamale-4384a5297
                 </a>
 
               </p>
@@ -1731,7 +1751,15 @@
           <div class="contact-row">
 
             <div class="contact-row-icon">
-              <i data-lucide="github"></i>
+
+              <svg
+                viewBox="0 0 24 24"
+                class="brand-icon"
+                aria-hidden="true"
+              >
+                <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+              </svg>
+
             </div>
 
             <div class="contact-row-text">
@@ -1743,11 +1771,11 @@
               <p class="contact-row-value">
 
                 <a
-                  href="https://github.com/poojadhamale"
+                  href="https://github.com/PoojaDhamale"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i data-lucide="github"></i>
+                  github.com/PoojaDhamale
                 </a>
 
               </p>
@@ -1782,29 +1810,81 @@
 
     <div class="footer-socials">
 
+      <!-- GitHub -->
+
       <a
-        href="https://github.com/poojadhamale"
+        href="https://github.com/PoojaDhamale"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
-        <i data-lucide="github"></i>
+
+        <svg
+          viewBox="0 0 24 24"
+          class="brand-icon"
+          aria-hidden="true"
+        >
+          <path d="M12 2C6.48 2 2 6.58 2 12.24C2 16.77 4.87 20.65 8.84 22C9.34 22.1 9.52 21.79 9.52 21.53C9.52 21.3 9.51 20.56 9.51 19.56C6.73 20.18 6.14 18.17 6.14 18.17C5.68 16.96 5.03 16.64 5.03 16.64C4.12 16 5.1 16.01 5.1 16.01C6.1 16.09 6.63 17.07 6.63 17.07C7.52 18.63 8.96 18.18 9.54 17.94C9.63 17.28 9.89 16.83 10.17 16.58C7.95 16.32 5.62 15.43 5.62 11.55C5.62 10.44 6.01 9.54 6.65 8.83C6.55 8.58 6.2 7.55 6.74 6.17C6.74 6.17 7.58 5.89 9.5 7.24C10.3 7.01 11.15 6.89 12 6.89C12.85 6.89 13.7 7.01 14.5 7.24C16.42 5.89 17.26 6.17 17.26 6.17C17.8 7.55 17.45 8.58 17.35 8.83C17.99 9.54 18.38 10.44 18.38 11.55C18.38 15.44 16.05 16.32 13.82 16.58C14.18 16.9 14.5 17.52 14.5 18.47C14.5 19.83 14.49 20.93 14.49 21.53C14.49 21.79 14.67 22.1 15.17 22C19.14 20.65 22 16.77 22 12.24C22 6.58 17.52 2 12 2Z"/>
+        </svg>
+
       </a>
 
+
+      <!-- LinkedIn -->
+
       <a
-        href="https://www.linkedin.com/in/pooja-dhamale-4384a5297"
+        href="https://www.linkedin.com/in/pooja-dhamale-4384a5297/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"
       >
-        <i data-lucide="linkedin"></i>
+
+        <svg
+          viewBox="0 0 24 24"
+          class="brand-icon"
+          aria-hidden="true"
+        >
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM8.3 18H5.7V9.7H8.3V18ZM7 8.5C6.15 8.5 5.5 7.85 5.5 7C5.5 6.15 6.15 5.5 7 5.5C7.85 5.5 8.5 6.15 8.5 7C8.5 7.85 7.85 8.5 7 8.5ZM18.3 18H15.7V13.8C15.7 12.8 15.68 11.5 14.3 11.5C12.9 11.5 12.7 12.6 12.7 13.7V18H10.1V9.7H12.6V10.8H12.65C13 10.15 13.8 9.4 15.1 9.4C17.75 9.4 18.3 11.15 18.3 13.4V18Z"/>
+        </svg>
+
       </a>
+
+
+      <!-- Email -->
 
       <a
         href="mailto:dhamalepooja15@gmail.com"
         aria-label="Email"
       >
-        <i data-lucide="mail"></i>
+
+        <svg
+          viewBox="0 0 24 24"
+          class="email-icon"
+          aria-hidden="true"
+        >
+
+          <rect
+            x="3"
+            y="5"
+            width="18"
+            height="14"
+            rx="2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+
+          <path
+            d="M4 7L12 13L20 7"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+        </svg>
+
       </a>
 
     </div>
@@ -1822,14 +1902,6 @@
   ====================================================== -->
 
   <script src="script.js"></script>
-
-
-
-
-
-  <!-- =====================================================
-       LUCIDE ICON INITIALIZATION
-  ====================================================== -->
 
   <script>
     if (typeof lucide !== "undefined") {
